@@ -1,0 +1,26 @@
+.featured{
+    margin: 100px 200px;
+
+}
+
+
+.top_featured{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 50px;
+}
+.top_featured h1{
+    flex:2;
+    text-transform: capitalize;
+}
+.top_featured p{
+    flex:3;
+    color: #999;
+}
+
+.bottom_featured{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
