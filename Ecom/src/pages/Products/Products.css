@@ -1,0 +1,33 @@
+.products{
+ padding: 30px;
+ display: flex;
+
+}
+
+.products_left{
+flex: 1;
+position: sticky;
+height: 100%;
+top:80px
+}
+.filterProduct{
+  
+    margin: 40px;
+}
+.h2filter{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.products_right{
+    flex: 3;
+}
+
+.products_right > img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 50px;
+   
+}
