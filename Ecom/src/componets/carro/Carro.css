@@ -1,0 +1,32 @@
+.carro{
+
+ position: absolute;  
+ right: 10px;
+ top: 60px;
+ z-index: 999; 
+ background-color: aliceblue;
+ padding: 30px;
+ box-shadow: 0 0 9px -5px black;
+}
+
+.imgcarro{
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.detailsCarro > .css-i4bv87-MuiSvgIcon-root{
+    color:red;
+}
+.carroButton{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*falta estilar*/

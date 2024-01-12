@@ -6,10 +6,19 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import { Link ,NavLink} from 'react-router-dom';
 import "./navbar.css"
+import { useState } from 'react';
+import Carro from '../carro/Carro';
 
 
 
 const Navbar = () => {
+
+const[open,setOpen]= useState(false)
+const handleOpenCart = ()=>{
+  setOpen(!open)
+}
+
+
   return (
     <div className='navbar'>
       <div className="wrapper">
@@ -47,13 +56,14 @@ const Navbar = () => {
             <PersonOutlineOutlinedIcon/>
            
             <FavoriteBorderOutlinedIcon/>
-            <div className="cartIcon">
+            <div className="cartIcon" onClick={handleOpenCart}>
                <ShoppingCartOutlinedIcon/>
                <span>0</span>
             </div>
            </div>
         </div>
       </div>
+      {open && <Carro/>}
     </div>
   )
 }
