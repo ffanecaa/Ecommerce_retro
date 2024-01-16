@@ -12,9 +12,9 @@ const Contact = () => {
         
         <div className="contact_mail">
             <input type="text" name="" id="" placeholder='escribe tu mail' />
-            <botton className="contact_botton">
+            <button className="contact_botton">
                 enviar
-            </botton>
+            </button>
         </div>
 
         <div className="contact_icons">

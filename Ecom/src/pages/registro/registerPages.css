@@ -1,0 +1,75 @@
+.register{
+    display: flex;
+    flex-direction: column;
+   
+    background-image: linear-gradient(180deg,#0c0c1d,#111132);
+    color:white;
+    height: 100vh;
+    width: 100vw;
+}
+/* h1{
+    text-align: center;
+    font-family: 'Seymour One', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+  
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Seymour One', sans-serif;
+   
+
+  
+} */
+.form_register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:30px;
+    
+   
+}
+
+.form_register >input{
+    width: 20%;
+    padding: 15px;
+    box-shadow: 0 0 10px;
+    color:rebeccapurple;
+
+}
+
+.form_register > button{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 0 10px white;
+    color:white;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+}
+
+
+.exitoso { 
+	position: relative; 
+	float: left;
+	background: #0c0c1d;
+	color: #fff;
+	font-size: 3.5em;
+}/* hsta aqui comportamiento normal frase */
+.exitoso span {
+    position:absolute;
+    right:10%;
+    width:0;
+    background: #0c0c1d;
+    border-left: 1px solid #0c0c1d;
+    animation: escribir 5s steps(50) 2;
+} /* elejido  duraccion velocidad  loop y 2 direcciones    */
+
+@keyframes escribir {
+    from { width: 10% }
+  
+    to { width:80%}
+}

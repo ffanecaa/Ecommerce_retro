@@ -15,7 +15,9 @@ const Products = () => {
     setSort(e.target.value);
   };
   console.log(sort);
-  return (
+  return (   // modificar para pasar id dinamicamente  llamar a products y pasarle product
+  // hacer un map  por ver
+  //antes link categorias
     <div className="products">
       <div className="products_left">
         <div className="filterProduct">

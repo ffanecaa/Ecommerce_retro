@@ -1,0 +1,23 @@
+.container_entries{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.form_container{
+    width: 100%;
+
+}
+.formCreate{
+    display: flex;
+    flex-direction: column;
+}
+.formCreate > input{
+  
+   width: 100px;
+   height: 20px;
+}
+.newProduct_button{
+    color:red;
+    background-color: blue;
+}

@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -12,6 +11,11 @@ import Products from './pages/Products/Products.jsx';
 import Home from './pages/Home/Home.jsx';
 import Navbar from './componets/Navbar/Navbar.jsx';
 import Footer from './componets/Footer/Footer.jsx';
+import NewProduct from './pages/CreateProduct/NewProduct.jsx';
+import LoginPages from './pages/login/LoginPages.jsx';
+import RegisterPages from './pages/registro/RegisterPages.jsx';
+import { AuthProvider } from './providers/AuthProvider.jsx';
+import Validation from './pages/validacion/Validation.jsx';
 
 const Layout =()=>{
   return(
@@ -45,12 +49,30 @@ const router = createBrowserRouter([
     path: "/product/:id",
     element: <Product/>
   },
+  {
+    path: "/createproduct",
+    element: <NewProduct/>
+  },
+  {
+    path: "/login",
+      element: <LoginPages/>
+   },
+   {
+    path: "/register",
+      element: <RegisterPages/>
+   },
+   {
+    path: "/validation:verificationCode",
+      element: <Validation/>
+   },
 ]
 },
  
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

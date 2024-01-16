@@ -43,13 +43,13 @@ const handleOpenCart = ()=>{
         </div>
         <div className="right">
           <div className="items">
-            <Link className="link" to ="/">contact</Link>
+            <Link className="link" to ="/login">login</Link>
            </div>
           <div className="items">
-            <Link className="link" to ="/">Stores</Link>
+            <Link className="link" to ="/register">register</Link>
            </div>
           <div className="items">
-            <Link className="link" to ="/">About</Link>
+            <Link className="link" to ="/createproduct">crear</Link>
            </div>
            <div className="icons">
             <SearchIcon/>
