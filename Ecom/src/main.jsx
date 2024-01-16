@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       element: <RegisterPages/>
    },
    {
-    path: "/validation:verificationCode",
+    path: "/validation/:verificationCode/:email",
       element: <Validation/>
    },
 ]
