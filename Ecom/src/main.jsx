@@ -16,6 +16,7 @@ import LoginPages from './pages/login/LoginPages.jsx';
 import RegisterPages from './pages/registro/RegisterPages.jsx';
 import { AuthProvider } from './providers/AuthProvider.jsx';
 import Validation from './pages/validacion/Validation.jsx';
+import Categories from './pages/categories/Categories.jsx';
 
 const Layout =()=>{
   return(
@@ -42,8 +43,8 @@ const router = createBrowserRouter([
   },
    
   {
-    path: "/products/:id",
-    element: <Products/>
+    path: "/products",
+    element: <Categories/>
   },
   {
     path: "/product/:id",

@@ -41,7 +41,7 @@ const Validation = () => {
 
   return (
     <div className="register">
-      <h2></h2>
+      <h2>listotto</h2>
     </div>
   );
 };
