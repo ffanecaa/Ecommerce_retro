@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import useProducts from "../../Hook/useProducts";
 import Cards from "../../componets/cards/Cards";
 
